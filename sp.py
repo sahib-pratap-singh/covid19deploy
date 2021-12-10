@@ -267,7 +267,7 @@ if cases == 'India cases':
     # parse the html content
     soup = BeautifulSoup(web_content, 'lxml')
     comments = soup.findAll(text=lambda text:isinstance(text, Comment))
-    check=comments[25]
+    check=comments[29]
     tag = BeautifulSoup(check, 'html.parser')
     soup=tag
     # remove any newlines and extra spaces from left and right
